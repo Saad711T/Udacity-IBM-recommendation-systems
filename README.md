@@ -1,5 +1,9 @@
-# Recommendations with IBM
+# Recommendation System with IBM Watson
 This project for multiple recommendation system using data from the IBM Watson Studio Platform . It includes a many methods (such as rank-based recommendations, user-user collaborative filtering, content-based filtering, and matrix factorization techniques.)
+
+#### This Project related with Udacity Data Scientist NanoDegree
+[Link for nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025)
+
 ## Getting Started
 Instructions for how to get a copy of the project running on your local machine.
 `git clone https://github.com/Saad711T/Udacity-IBM-recommendation-systems`
