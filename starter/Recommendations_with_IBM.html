@@ -10383,12 +10383,12 @@ vt (714, 714)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The recommendation systems implemented show different strengths depending on the user’s behavior and data availability.</p>
+<h3 id="Evaluation-of-a-Recommendation-Techniques">Evaluation of a Recommendation Techniques<a class="anchor-link" href="#Evaluation-of-a-Recommendation-Techniques">¶</a></h3><p>The recommendation systems showing a different strengths depending on the user’s behavior and availability of the data.</p>
 <ul>
 <li>The Rank-Based recommendation is simple and effective for new users with no interaction history. It always returns popular articles and ensures basic engagement but lacks personalization.</li>
 <li>The User-User Collaborative Filtering performs well when users have overlapping interactions, making it ideal for users with moderate to large interaction histories. However, it struggles with new users (cold start problem).</li>
-<li>Content-Based recommendations are useful for new users who have interacted with only a few articles, as they rely on article features rather than user behavior.</li>
-<li>Matrix Factorization (SVD) provides high-quality personalized recommendations when there's sufficient user-item interaction data, but it requires more computation and cannot recommend to users with no history.</li>
+<li>Content-Based recommendations are useful for the new users who have interacted with only a few articles , as they rely on features of articles rather than user behavior .</li>
+<li>Matrix Factorization (SVD)  provides high-quality recommendations when there is sufficient user-item interaction data , but it requires more computation and can't recommend to the users with no history .</li>
 </ul>
 <p>To evaluate improvements over current methods, we can measure metrics like precision, recall, or user engagement after deploying each technique. In practice, a hybrid approach might work best, adapting the method based on the user’s interaction depth.</p>
 </div>
@@ -10426,7 +10426,7 @@ vt (714, 714)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [437]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [445]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
@@ -10441,7 +10441,7 @@ vt (714, 714)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[437]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[445]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>0</pre>
 </div>
