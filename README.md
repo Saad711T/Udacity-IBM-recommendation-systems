@@ -1,54 +1,38 @@
-# README Template
-
-Below is a template provided for use when building your README file for students.
-
-# Project Title
-
-Project description goes here.
-
+# Recommendations with IBM
+This project for multiple recommendation system using data from the IBM Watson Studio Platform . It includes a many methods (such as rank-based recommendations, user-user collaborative filtering, content-based filtering, and matrix factorization techniques.)
 ## Getting Started
-
 Instructions for how to get a copy of the project running on your local machine.
+`git clone https://github.com/Saad711T/Udacity-IBM-recommendation-systems`
 
 ### Dependencies
-
 ```
-Examples here
+- notebook
+- numpy
+- pandas
+- scikit-learn
+- matplotlib
 ```
 
 ### Installation
 
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
-
-```
-Give an example here
-```
+Run this command in your terminal.
+`pip install numpy pandas notebook scikit-learn matplotlib`
 
 ## Testing
 
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
-```
-Examples here
-```
+Enter **Jupyter Notebook** and Run all commands , you can also find notebook summary in HTML file here `Recommendations_with_IBM.html`
 
 ## Project Instructions
 
-This section should contain all the student deliverables for this project.
+First thing is `README.md` and this is a small description for the project . Also in `starter` folder we can find notebook and important scripts with data in subfolder `data` .
 
 ## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
+* [Python](https://www.python.org) - Python is High-level language used mainly in machine learning ,data science ,video games ,and back-end web development.
+* [Jupyter Notebook](https://jupyter.org) - Jupyter is IDE/Environment using for (Julia & R & Python) with Markdown comments , It's very good tool for ML & Data science.
+* [Pandas](https://pandas.pydata.org) - Pandas is python library using for Data manipulation.
+* [Numpy](https://numpy.org) - Numpy is python library using for numerical things , and Numpy meaning is "Numerical Python".
+* [Scikit-Learn](https://scikit-learn.org/stable) - Scikit-Learn is python library using primarily for ML/DL.
+* [Matplotlib](https://matplotlib.org) - Matplotlib is python library using in Data visualization , It's very helpful for Data scientists/analysts.
 
 ## License
 
