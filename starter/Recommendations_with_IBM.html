@@ -10383,6 +10383,24 @@ vt (714, 714)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The recommendation systems implemented show different strengths depending on the user’s behavior and data availability.</p>
+<ul>
+<li>The Rank-Based recommendation is simple and effective for new users with no interaction history. It always returns popular articles and ensures basic engagement but lacks personalization.</li>
+<li>The User-User Collaborative Filtering performs well when users have overlapping interactions, making it ideal for users with moderate to large interaction histories. However, it struggles with new users (cold start problem).</li>
+<li>Content-Based recommendations are useful for new users who have interacted with only a few articles, as they rely on article features rather than user behavior.</li>
+<li>Matrix Factorization (SVD) provides high-quality personalized recommendations when there's sufficient user-item interaction data, but it requires more computation and cannot recommend to users with no history.</li>
+</ul>
+<p>To evaluate improvements over current methods, we can measure metrics like precision, recall, or user engagement after deploying each technique. In practice, a hybrid approach might work best, adapting the method based on the user’s interaction depth.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a id="conclusions"></a></p>
 <h3 id="Extras">Extras<a class="anchor-link" href="#Extras">¶</a></h3><p>Using your workbook, you could now save your recommendations for each user, develop a class to make new predictions and update your results, and make a flask app to deploy your results.  These tasks are beyond what is required for this project.  However, from what you learned in the lessons, you certainly capable of taking these tasks on to improve upon your work here!</p>
 <h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a></h2><blockquote>
@@ -10403,6 +10421,33 @@ vt (714, 714)
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [437]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
+<span class="n">call</span><span class="p">([</span><span class="s1">'python'</span><span class="p">,</span> <span class="s1">'-m'</span><span class="p">,</span> <span class="s1">'nbconvert'</span><span class="p">,</span> <span class="s1">'--to'</span><span class="p">,</span> <span class="s1">'html'</span><span class="p">,</span> <span class="s1">'Recommendations_with_IBM.ipynb'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[437]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -10411,8 +10456,7 @@ vt (714, 714)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
-<span class="n">call</span><span class="p">([</span><span class="s1">'python'</span><span class="p">,</span> <span class="s1">'-m'</span><span class="p">,</span> <span class="s1">'nbconvert'</span><span class="p">,</span> <span class="s1">'Recommendations_with_IBM.ipynb'</span><span class="p">])</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
